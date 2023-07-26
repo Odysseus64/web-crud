@@ -11,6 +11,7 @@ async fn index() -> impl Responder {
 // Определяем функцию main(), которая будет запускать сервер
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    println!("Server starter on https://127.0.0.1:8080");
     // Создаем экземпляр HttpServer, который будет обрабатывать запросы
     HttpServer::new(|| {
         // Создаем новый экземпляр App, который будет содержать маршруты нашего приложения
